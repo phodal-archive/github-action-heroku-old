@@ -1,6 +1,6 @@
 # gradle-getting-started
 
-A barebones Gradle app, which can easily be deployed to Heroku.
+
 
 This application support the [Getting Started with Gradle on Heroku](https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku) article - check it out.
 
