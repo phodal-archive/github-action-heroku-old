@@ -1,16 +1,17 @@
 server:
-  # don't modify it if you don't know what you are doing
-  port: ${PORT:5000}
+  port: 8080
 
 spring:
-  profiles:
-    active: production
   datasource:
-    # don't modify it if you don't know what you are doing
-    url: ${JDBC_DATABASE_URL:}
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: s$cret
     hikari:
       connection-timeout: 30000
       maximum-pool-size: 10
+
+  flyway:
+    baseline-on-migrate: true
 
   thymeleaf:
     mode: HTML
@@ -18,4 +19,6 @@ spring:
 logging:
   level:
     org.springframework: INFO
+
+debug: true
 

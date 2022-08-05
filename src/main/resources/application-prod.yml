@@ -1,0 +1,27 @@
+server:
+  # don't modify it if you don't know what you are doing
+  port: ${PORT}
+
+spring:
+  profiles:
+    active: production
+  datasource:
+    # don't modify it if you don't know what you are doing
+    url: ${JDBC_DATABASE_URL:}
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+
+  flyway:
+    baseline-on-migrate: true
+  jpa:
+    hibernate:
+      ddl-auto: none # disable DB schema creation from entity
+
+  thymeleaf:
+    mode: HTML
+
+logging:
+  level:
+    org.springframework: INFO
+
