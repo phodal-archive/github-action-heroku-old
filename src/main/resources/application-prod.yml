@@ -1,6 +1,6 @@
 server:
   # don't modify it if you don't know what you are doing
-  port: ${PORT:}
+  port: ${PORT:8080}
 
 spring:
   profiles:
@@ -20,8 +20,3 @@ spring:
 
   thymeleaf:
     mode: HTML
-
-logging:
-  level:
-    org.springframework: INFO
-
