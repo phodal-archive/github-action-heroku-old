@@ -1,4 +1,4 @@
-package com.thoughtworks.training.controller.dto;
+package com.thoughtworks.training.model.dto;
 
 public class CompanyRequest {
     private String companyName;

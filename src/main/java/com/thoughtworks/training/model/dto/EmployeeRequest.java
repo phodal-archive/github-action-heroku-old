@@ -1,31 +1,21 @@
-package com.thoughtworks.training.controller.dto;
+package com.thoughtworks.training.model.dto;
 
-public class EmployeeResponse {
-    private Integer id;
+public class EmployeeRequest {
     private String name;
     private Integer age;
     private String gender;
     private Integer salary;
     private Integer companyId;
 
-    public EmployeeResponse() {
+    public EmployeeRequest() {
 
     }
 
-    public EmployeeResponse(int id, String name, int age, String gender, Integer salary) {
-        this.id = id;
+    public EmployeeRequest(String name, int age, String gender, Integer salary) {
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.salary = salary;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getName() {

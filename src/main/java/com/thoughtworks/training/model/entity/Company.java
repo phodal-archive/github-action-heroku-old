@@ -1,23 +1,25 @@
-package com.thoughtworks.training.model;
+package com.thoughtworks.training.model.entity;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 public class Company {
     @Id
-    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator = "company_sequence")
-    @SequenceGenerator(name = "company_sequence",sequenceName = "company_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String companyName;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "companyId")
+    @OneToMany(mappedBy = "companyId")
     private List<Employee> employees;
+
+    public Company() {
+        employees = new ArrayList<>();
+    }
 
     public Company(Integer id, String companyName, List<Employee> employees) {
         this.id = id;
@@ -25,20 +27,24 @@ public class Company {
         this.employees = employees;
     }
 
-    public Company() {
+    public List<Employee> getEmployees() {
+        return employees;
+    }
 
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
     }
 
     public Integer getId() {
         return id;
     }
 
-    public String getCompanyName() {
-        return companyName;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public List<Employee> getEmployees() {
-        return employees;
+    public String getCompanyName() {
+        return companyName;
     }
 
     public void setCompanyName(String companyName) {

@@ -28,9 +28,4 @@ public class HerokuApplication {
   public static void main(String[] args) throws Exception {
     SpringApplication.run(HerokuApplication.class, args);
   }
-
-  @RequestMapping("/")
-  String index() {
-    return "index";
-  }
 }

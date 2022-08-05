@@ -1,6 +1,6 @@
-package com.thoughtworks.training.controller.dto;
+package com.thoughtworks.training.model.dto;
 
-import com.thoughtworks.training.model.Employee;
+import com.thoughtworks.training.model.entity.Employee;
 
 import java.util.List;
 

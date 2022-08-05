@@ -1,8 +1,8 @@
-package com.thoughtworks.training.controller.mapper;
+package com.thoughtworks.training.mapper;
 
-import com.thoughtworks.training.controller.dto.EmployeeRequest;
-import com.thoughtworks.training.controller.dto.EmployeeResponse;
-import com.thoughtworks.training.model.Employee;
+import com.thoughtworks.training.model.entity.Employee;
+import com.thoughtworks.training.model.dto.EmployeeRequest;
+import com.thoughtworks.training.model.dto.EmployeeResponse;
 import org.springframework.stereotype.Component;
 
 @Component

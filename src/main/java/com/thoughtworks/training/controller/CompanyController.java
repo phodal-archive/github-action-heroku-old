@@ -1,12 +1,12 @@
 package com.thoughtworks.training.controller;
 
-import com.thoughtworks.training.controller.dto.CompanyRequest;
-import com.thoughtworks.training.controller.dto.CompanyResponse;
-import com.thoughtworks.training.controller.dto.EmployeeResponse;
-import com.thoughtworks.training.controller.mapper.CompanyMapper;
-import com.thoughtworks.training.controller.mapper.EmployeeMapper;
-import com.thoughtworks.training.model.Company;
-import com.thoughtworks.training.model.Employee;
+import com.thoughtworks.training.mapper.CompanyMapper;
+import com.thoughtworks.training.mapper.EmployeeMapper;
+import com.thoughtworks.training.model.dto.CompanyRequest;
+import com.thoughtworks.training.model.dto.CompanyResponse;
+import com.thoughtworks.training.model.dto.EmployeeResponse;
+import com.thoughtworks.training.model.entity.Company;
+import com.thoughtworks.training.model.entity.Employee;
 import com.thoughtworks.training.service.CompanyService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

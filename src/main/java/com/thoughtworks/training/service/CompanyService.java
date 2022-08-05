@@ -1,18 +1,16 @@
 package com.thoughtworks.training.service;
 
 import com.thoughtworks.training.exception.CompanyNotFoundException;
-import com.thoughtworks.training.model.Company;
-import com.thoughtworks.training.model.Employee;
+import com.thoughtworks.training.model.entity.Company;
+import com.thoughtworks.training.model.entity.Employee;
 import com.thoughtworks.training.repository.CompanyRepository;
 import com.thoughtworks.training.repository.EmployeeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
 
 @Service
 public class CompanyService {
@@ -35,7 +33,7 @@ public class CompanyService {
 
     public Company get(Integer companyId) {
         return companyRepository.findById(companyId)
-                .orElseThrow(() -> new CompanyNotFoundException("Company Id Not Found. Id: " + companyId));
+            .orElseThrow(() -> new CompanyNotFoundException("Company Id Not Found. Id: " + companyId));
     }
 
     public Company create(Company company) {
