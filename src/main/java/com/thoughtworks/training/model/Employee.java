@@ -1,4 +1,4 @@
-package com.thoughtworks.training.travisheroku.model;
+package com.thoughtworks.training.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

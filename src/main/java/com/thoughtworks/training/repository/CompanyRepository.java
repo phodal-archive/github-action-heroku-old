@@ -1,6 +1,6 @@
-package com.thoughtworks.training.travisheroku.repository;
+package com.thoughtworks.training.repository;
 
-import com.thoughtworks.training.travisheroku.model.Company;
+import com.thoughtworks.training.model.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.thoughtworks.training.travisheroku.controller;
+package com.thoughtworks.training.controller;
 
-import com.thoughtworks.training.travisheroku.model.Employee;
-import com.thoughtworks.training.travisheroku.service.EmployeeService;
+import com.thoughtworks.training.model.Employee;
+import com.thoughtworks.training.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

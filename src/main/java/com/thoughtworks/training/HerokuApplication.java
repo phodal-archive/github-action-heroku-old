@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.thoughtworks.training.travisheroku;
+package com.thoughtworks.training;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
