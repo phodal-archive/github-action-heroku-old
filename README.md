@@ -1,5 +1,7 @@
 # Use Github + GitHub Actions + Heroku to deploy the project
 
+based on : [https://github.com/TWweihuang/travis-heroku-demo](https://github.com/TWweihuang/travis-heroku-demo)
+
 **Github** GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. Headquartered in California, it has been a subsidiary of Microsoft since 2018.
 
 **GitHub Actions** GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.
