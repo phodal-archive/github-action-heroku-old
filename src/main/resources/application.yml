@@ -4,8 +4,6 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/testdb
-    username: postgres
-    password: s$cret
     hikari:
       connection-timeout: 30000
       maximum-pool-size: 10
