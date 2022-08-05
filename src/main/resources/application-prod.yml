@@ -1,6 +1,6 @@
 server:
   # don't modify it if you don't know what you are doing
-  port: ${PORT}
+  port: 8080
 
 spring:
   profiles:
